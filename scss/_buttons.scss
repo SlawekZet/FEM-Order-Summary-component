@@ -1,0 +1,24 @@
+.button-proceed {
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: $bright-blue;
+  color: $very-pale-blue;
+  padding: 15px;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.button-proceed:hover {
+  background-color: $bright-violet;
+  cursor: pointer;
+}
+
+.button-cancel {
+  font-weight: 700;
+  color: $desaturated-blue;
+  text-decoration: none;
+}
+
+.button-cancel:hover {
+  color: $dark-blue;
+}

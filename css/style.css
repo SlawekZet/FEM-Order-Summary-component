@@ -1,0 +1,110 @@
+.button-proceed {
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 15px;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.button-proceed:hover {
+  background-color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+
+.button-cancel {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+.button-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 450px;
+  margin: 1rem;
+  box-shadow: 2px 12px 30px -1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+.card .background-image {
+  width: 100%;
+}
+.card .text-box {
+  padding: 10%;
+}
+.card .text-box h1 {
+  font-weight: 900;
+  font-size: 28px;
+}
+.card .text-box .paragraph {
+  padding: 20px 2%;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+}
+.card .text-box .plan-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-radius: 15px;
+  background-color: hsl(225, 100%, 98%);
+}
+.card .text-box .plan-box .plan-img-box {
+  display: flex;
+  gap: 15px;
+}
+.card .text-box .plan-box .plan-img-box .plan-pricing-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .text-box .plan-box .plan-img-box .plan-pricing-box .plan {
+  font-weight: 900;
+}
+.card .text-box .plan-box .plan-img-box .plan-pricing-box .pricing {
+  color: hsl(224, 23%, 55%);
+}
+.card .text-box .plan-box a {
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+}
+.card .text-box .plan-box a:hover {
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+}
+
+@media screen and (max-width: 475px) {
+  .card .text-box .plan-box {
+    padding: 25px 0;
+  }
+}
